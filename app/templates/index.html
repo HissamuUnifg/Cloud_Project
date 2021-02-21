@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Hello!!!</h1>
+    <table border="1">
+        <tr>
+            <td>Nome</td>
+            <td>Email</td>
+            <td>Senha</td>
+        </tr>
+        {% for user in users %}
+            <tr>
+                <td>{{ user.username }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.senha }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    {% for post in posts %}
+    <div><p>{{ post.author.username }} says: <b>{{ post.body }}</b></p></div>
+    {% endfor %}
+{% endblock %}
