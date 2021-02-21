@@ -7,21 +7,21 @@ The installation process is quite simple and direct.
 Assuming you are using an Ubuntu distro, you just have assure you have python3 installed e clone de repository in a folfer of your preference.
 
 After cloned, navigate to the project directory and use apt to instal pip: 
- sudo apt install pip
+> sudo apt install pip
  
 You then, may start a virtual env using venv (using a virtual environment is optional but recommended).
 
- cd your_project_path
- python -m venv venv
- source venv/bin/activate
+> cd your_project_path
+> python -m venv venv
+> source venv/bin/activate
  
 After that, you just have to install the dependencies listed in the requirements.txt file
- pip install -r requirements.txt
+> pip install -r requirements.txt
  
 Now you can go take a cup of coffe while all deps and modules are installed...
 Now, you should be able to run the app, justa typing
 
- flask run
+> flask run
  
 Expected output in your terminal: 
 
